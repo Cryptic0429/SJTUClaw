@@ -86,3 +86,5 @@ def test_delete_unknown_id_has_readable_error(tmp_path):  # 验证无效 ID 不�
     # 执行并断言：删除不存在 ID 返回包含该 ID 的错误。
     with pytest.raises(SessionNotFoundError, match="missing-id"):
         store.delete("missing-id")
+
+def a():
